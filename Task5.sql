@@ -7,4 +7,4 @@ select
 ,	"Title" 
 ,	"FileExtension"  
 from "Production"."Document" 
-where "FileExtension" = '.doc';
+where "FileExtension" LIKE '.doc%';
