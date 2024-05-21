@@ -5,6 +5,6 @@
 SELECT "Name" , "ListPrice" ,
        (SELECT COUNT(*)
         FROM "Production"."Product"  AS p2
-        WHERE p2."ListPrice" < p1."ListPrice") + 5 AS rank
+        WHERE p2."ListPrice" < p1."ListPrice") AS rank
 FROM "Production"."Product"  AS p1
 ORDER BY rank;
