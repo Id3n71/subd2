@@ -1,0 +1,4 @@
+ALTER TABLE buyers 
+ALTER COLUMN Buyers_ID SET NOT NULL,
+ALTER COLUMN Buyers_Name SET NOT NULL,
+ALTER COLUMN Buyers_PhoneNumber SET NOT null;
